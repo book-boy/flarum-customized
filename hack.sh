@@ -190,3 +190,5 @@ wget -qO "vendor/flarum/core/views/frontend/app.blade.php" \
 composer require csineneo/lang-traditional-chinese
 composer require csineneo/lang-simplified-chinese
 composer require csineneo/vivaldi-club-bbcode
+s
+
