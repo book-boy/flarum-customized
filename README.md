@@ -10,4 +10,4 @@
 
 ### 定制演示站点
 
-- [](https://discuss.srinn.cn)
+- [https://discuss.srinn.cn](https://discuss.srinn.cn)
