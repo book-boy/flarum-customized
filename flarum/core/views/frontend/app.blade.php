@@ -1,35 +1,44 @@
 <!doctype html>
+<!-----------------------------------------------------------------
+-------------------------------------------------------------------
+                       .__                                 
+          _____________|__| ____   ____       ____   ____  
+         /  ___/\_  __ \  |/    \ /    \    _/ ___\ /    \ 
+         \___ \  |  | \/  |   |  \   |  \   \  \___|   |  \
+        /____  > |__|  |__|___|  /___|  / /\ \___  >___|  /
+             \/                \/     \/  \/     \/     \/  
+-------------------------------------------------------------------
+------------------------------------------------------------------>
 <html lang="zh">
 <head>
 <title>{{ $title }}</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="author" content="Csineneo" />
-<meta name="keywords" content="Vivaldi, Opera, vivaldi browser, vivaldi snapshot, 瀏覽器, 中文, 下载, 維瓦爾第, 韋瓦第, Flarum">
-<meta name="apple-mobile-web-app-title" content="Vivaldi Club">
+<meta name="author" content="Srinn Game Team">
+<meta name="keywords" content="SRINN,散人客栈,武侠论坛,BBS,Flarum">
+<meta name="apple-mobile-web-app-title" content="SRINN GAME TEAM">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="application-name" content="Vivaldi Club">
+<meta name="application-name" content="SRINN GAME TEAM">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="msapplication-TileColor" content="{{ array_get($forum, 'attributes.themePrimaryColor') }}">
-<meta name="msapplication-TileImage" content="https://awk.tw/assets/icons/icon.png">
-<meta property="og:site_name" content="Vivaldi Club" />
+<meta name="msapplication-TileImage" content="https://discuss.srinn.cn/assets/icons/icon.png">
+<meta property="og:site_name" content="SRINN GAME TEAM" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:image" content="https://awk.tw/assets/icons/icon.png" />
-<meta property="og:image" content="https://awk.tw/assets/icons/icon.png" />
-<meta property="og:url" content="https://vivaldi.club/" />
-<meta name="twitter:url" content="https://vivaldi.club/" />
+<meta name="twitter:image" content="https://discuss.srinn.cn/assets/icons/icon.png" />
+<meta property="og:image" content="https://discuss.srinn.cn/assets/icons/icon.png" />
+<meta property="og:url" content="https://discuss.srinn.cn/" />
+<meta name="twitter:url" content="https://discuss.srinn.cn/" />
 <meta property="og:title" content="{{ $title }}" />
 <meta name="twitter:title" content="{{ $title }}" />
 <meta property="og:description" content="非官方 Vivaldi 瀏覽器中文討論區，我們永遠熱愛並追隨老譚的腳步" />
 <meta name="twitter:description" content="非官方 Vivaldi 瀏覽器中文討論區，我們永遠熱愛並追隨老譚的腳步" />
-<link rel="icon" type="image/png" href="https://awk.tw/assets/icons/icon.png">
-<link rel="shortcut icon" type="image/x-icon" href="https://awk.tw/assets/icons/favicon.ico">
-<link rel="mask-icon" href="https://awk.tw/assets/icons/icon.svg" color="%%PRIMARY_COLOR%%">
-<link rel="alternate" type="application/rss+xml" title="Vivaldi Snapshot" href="https://awk.tw/rss/snapshot.rss" />
+<link rel="icon" type="image/png" href="https://discuss.srinn.cn/assets/icons/icon.png">
+<link rel="shortcut icon" type="image/x-icon" href="https://discuss.srinn.cn/assets/icons/favicon.ico">
+<link rel="mask-icon" href="https://discuss.srinn.cn/assets/icons/icon.svg" color="%%PRIMARY_COLOR%%">
 {!! $head !!}
-<link rel="stylesheet" href="https://awk.tw/assets/css/flarum.ext.css">
-<script type="text/javascript" src="https://awk.tw/assets/js/webpjs-0.0.2.min.js"></script>
+<link rel="stylesheet" href="https://discuss.srinn.cn/assets/css/flarum.ext.css">
+<script type="text/javascript" src="https://discuss.srinn.cn/assets/js/webpjs-0.0.2.min.js"></script>
 <script type="text/javascript">
   var _paq = _paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
@@ -73,8 +82,7 @@
   }
 </script>
 <footer id="footer">
-  <p>非官方 Vivaldi 瀏覽器中文討論區，我們永遠熱愛並追隨<a href="https://twitter.com/jonsvt" target="_blank">老譚</a>的腳步</p>
-  <p><a href="https://t.me/Csineneo" target="_blank">@Csineneo</a></p>
+  <p style="font-size:12px">SRINN GAME TEAM <a href="https://www.srinn.cn/?bbs" target="_blank">散人客栈</a> 技术支持</p>
 </footer>
 {!! $foot !!}
 <noscript><p><img src="//m.awk.tw/m.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
