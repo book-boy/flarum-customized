@@ -31,15 +31,15 @@
 <meta name="twitter:url" content="https://discuss.srinn.cn/" />
 <meta property="og:title" content="{{ $title }}" />
 <meta name="twitter:title" content="{{ $title }}" />
-<meta property="og:description" content="非官方 Vivaldi 瀏覽器中文討論區，我們永遠熱愛並追隨老譚的腳步" />
-<meta name="twitter:description" content="非官方 Vivaldi 瀏覽器中文討論區，我們永遠熱愛並追隨老譚的腳步" />
+<meta property="og:description" content="江湖游侠,四海为家。云集客栈,论剑天下。" />
+<meta name="twitter:description" content="江湖游侠,四海为家。云集客栈,论剑天下。" />
 <link rel="icon" type="image/png" href="https://discuss.srinn.cn/assets/icons/icon.png">
 <link rel="shortcut icon" type="image/x-icon" href="https://discuss.srinn.cn/assets/icons/favicon.ico">
 <link rel="mask-icon" href="https://discuss.srinn.cn/assets/icons/icon.svg" color="%%PRIMARY_COLOR%%">
 {!! $head !!}
 <link rel="stylesheet" href="https://discuss.srinn.cn/assets/css/flarum.ext.css">
 <script type="text/javascript" src="https://discuss.srinn.cn/assets/js/webpjs-0.0.2.min.js"></script>
-<script type="text/javascript">
+<!--<script type="text/javascript">
   var _paq = _paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(['trackPageView']);
@@ -51,25 +51,19 @@
   var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
   g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'m.js'; s.parentNode.insertBefore(g,s);
   })();
-</script>
+</script>-->
 </head>
-
 <body>
 {!! $layout !!}
-
 <div id="modal"></div>
 <div id="alerts"></div>
-
 <script>
   document.getElementById('flarum-loading').style.display = 'block';
   var flarum = {extensions: {}};
 </script>
-
 {!! $js !!}
-
 <script>
   document.getElementById('flarum-loading').style.display = 'none';
-
   try {
     flarum.core.app.load(@json($payload));
     flarum.core.app.bootExtensions(flarum.extensions);
@@ -82,9 +76,9 @@
   }
 </script>
 <footer id="footer">
-  <p style="font-size:12px">SRINN GAME TEAM <a href="https://www.srinn.cn/?bbs" target="_blank">散人客栈</a> 技术支持</p>
+  <p style="font-size:12px; text-align:center;">SRINN GAME TEAM <a href="https://www.srinn.cn/?bbs" target="_blank">散人客栈</a> 技术支持</p>
 </footer>
 {!! $foot !!}
-<noscript><p><img src="//m.awk.tw/m.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+<!--<noscript><p><img src="//m.awk.tw/m.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>-->
 </body>
 </html>
