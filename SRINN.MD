@@ -270,14 +270,13 @@ newEl.innerHTML = '<p class="fickle">这是一个全选的谈论站点！</p>';
  3. 修复：增加支持顶部导航栏 https://discuss.srinn.cn/d/11
  
  ---
+ 
 - [ ] 
 - [x] 
-![logo](logo.png)
+
+![book.boy](https://avatars0.githubusercontent.com/u/47053228?s=96&v=4)
 > * 整理知识，学习笔记
 > 请保留此份说明，如需撰写新稿件，点击顶部工具栏右侧的 <i class="icon-file"></i> **新文稿** 或者使用快捷键 `Ctrl+Alt+N`。
-
-$$E=mc^2$$
-
 
 
 | 项目        | 价格   |  数量  |
