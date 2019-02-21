@@ -262,9 +262,9 @@ newEl.innerHTML = '<p class="fickle">这是一个全选的谈论站点！</p>';
               </div>
 ```
 参看：http://discuss.flarum.org.cn/d/114
+
 ### 更新记录
 ---
-
  1. 修复：主题关注、回复、提及（@）发送邮件中文内容 https://discuss.srinn.cn/d/7
  2. 修复：首页动态公告内容(插件) https://discuss.srinn.cn/d/9
  3. 修复：增加支持顶部导航栏 https://discuss.srinn.cn/d/11
