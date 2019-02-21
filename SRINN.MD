@@ -274,7 +274,7 @@ newEl.innerHTML = '<p class="fickle">这是一个全选的谈论站点！</p>';
 - [ ] 
 - [x] 
 
-![book.boy](https://avatars0.githubusercontent.com/u/47053228?s=96&v=4)
+![book.boy](https://avatars0.githubusercontent.com/u/47053228?s=96&v=4){:height="50" width="50"}
 > * 整理知识，学习笔记
 > 请保留此份说明，如需撰写新稿件，点击顶部工具栏右侧的 <i class="icon-file"></i> **新文稿** 或者使用快捷键 `Ctrl+Alt+N`。
 
