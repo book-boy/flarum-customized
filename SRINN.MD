@@ -192,20 +192,20 @@ activate_account:
         {url}
 
         若非你本人行为，请忽略此邮件。</b>
-        ```
+```
 修改vendor/flarum/core/src/Api/Controller/SendConfirmationEmailController.php中90行以下代码：
 ```
 $this->mailer->raw($body, function (Message $message) use ($actor, $data) {
             $message->to($actor->email);
             $message->subject('['.$data['{forum}'].'] '.$this->translator->trans('core.email.activate_account.subject'));
         });
-  ```
+```
   改为
-  ```
+```
   $this->mailer->send(['html' => $body], [], function (Message $message) use ($actor, $data) {
             $message->to($actor->email);
             $message->subject('['.$data['{forum}'].'] '.$this->translator->trans('core.email.activate_account.subject'));
-  ```
+```
 修改vendor/illuminate/mail/Mailer.php中213行以下代码：
 ```
  $data['message'] = $message = $this->createMessage();
@@ -240,7 +240,6 @@ $message->setBody($this->renderView($view, $data), 'text/html');
 修改assets/extensions/zerosonesfun-fickle-announcement/fickle.js中7行英文内容为
 ```
 newEl.innerHTML = '<p class="fickle">这是一个全选的谈论站点！</p>';
-
 ```
 ### 修复：增加支持顶部导航栏
 ---
@@ -260,7 +259,7 @@ newEl.innerHTML = '<p class="fickle">这是一个全选的谈论站点！</p>';
                     </ul>
                     <div id="header-primary"><ul class="Header-controls"></ul></div>
               </div>
-
+```
 
 参看：http://discuss.flarum.org.cn/d/114
 
@@ -286,3 +285,38 @@ $$E=mc^2$$
 | 计算机     | \$1600 |   5     |
 | 手机        |   \$12   |   12   |
 | 管线        |    \$1    |  234  |
+
+
+```flow
+st=>start: Start
+op=>operation: Your Operation
+cond=>condition: Yes or No?
+e=>end
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
+```
+
+```seq
+Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!
+```
+
+```gantt
+    title 项目开发流程
+    section 项目确定
+        需求分析       :a1, 2016-06-22, 3d
+        可行性报告     :after a1, 5d
+        概念验证       : 5d
+    section 项目实施
+        概要设计      :2016-07-05  , 5d
+        详细设计      :2016-07-08, 10d
+        编码          :2016-07-15, 10d
+        测试          :2016-07-22, 5d
+    section 发布验收
+        发布: 2d
+        验收: 3d
+```
+
