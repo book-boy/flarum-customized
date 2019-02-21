@@ -268,3 +268,41 @@ newEl.innerHTML = '<p class="fickle">这是一个全选的谈论站点！</p>';
  1. 修复：主题关注、回复、提及（@）发送邮件中文内容 https://discuss.srinn.cn/d/7
  2. 修复：首页动态公告内容(插件) https://discuss.srinn.cn/d/9
  3. 修复：增加支持顶部导航栏 https://discuss.srinn.cn/d/11
+- [ ] 
+- [x] 
+![cmd-markdown-logo](https://www.zybuluo.com/static/img/logo.png)
+> * 整理知识，学习笔记
+> 请保留此份 Cmd Markdown 的欢迎稿兼使用说明，如需撰写新稿件，点击顶部工具栏右侧的 <i class="icon-file"></i> **新文稿** 或者使用快捷键 `Ctrl+Alt+N`。
+$$E=mc^2$$
+
+```flow
+st=>start: Start
+op=>operation: Your Operation
+cond=>condition: Yes or No?
+e=>end
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
+```
+
+```seq
+Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!
+```
+```gantt
+    title 项目开发流程
+    section 项目确定
+        需求分析       :a1, 2016-06-22, 3d
+        可行性报告     :after a1, 5d
+        概念验证       : 5d
+    section 项目实施
+        概要设计      :2016-07-05  , 5d
+        详细设计      :2016-07-08, 10d
+        编码          :2016-07-15, 10d
+        测试          :2016-07-22, 5d
+    section 发布验收
+        发布: 2d
+        验收: 3d
+```
