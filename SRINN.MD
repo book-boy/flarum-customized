@@ -1,254 +1,212 @@
-Flarum°²×°Ç°×¼±¸
-
-°²×°»·¾³Ãæ°å
+## Flarumå®‰è£…å‰å‡†å¤‡
+----
+å®‰è£…ç¯å¢ƒé¢æ¿
 ```
-±¦ËşÃæ°å¡¢AppnodeÃæ°å£¬¾ù¼¯³Écompose°²×°¡£×ÔĞĞ²Î¿¼¹Ù·½°²×°
-
+å®å¡”é¢æ¿ã€Appnodeé¢æ¿ï¼Œå‡é›†æˆcomposeå®‰è£…ã€‚è‡ªè¡Œå‚è€ƒå®˜æ–¹å®‰è£…
 ```
-
-Ìí¼ÓlinuxÓÃ»§
+æ·»åŠ linuxç”¨æˆ·
 ```
-adduser sroot   //Ìí¼ÓsrootÓÃ»§
-passwd sroot  //ÉèÖÃsrootÓÃ»§ÃÜÂë
-vi /etc/sudoers  //±à¼­ÊÚÈ¨ÎÄ¼ş
-sroot    ALL=(ALL)        PASSWD:ALL  //ÕÒµ½root    ALL=(ALL)    ALLÏÂ¼ÓÈë
-
+adduser sroot   //æ·»åŠ srootç”¨æˆ·
+passwd sroot  //è®¾ç½®srootç”¨æˆ·å¯†ç 
+vi /etc/sudoers  //ç¼–è¾‘æˆæƒæ–‡ä»¶
+sroot    ALL=(ALL)        PASSWD:ALL  //æ‰¾åˆ°root    ALL=(ALL)    ALLä¸‹åŠ å…¥
 ```
-
-ÔËĞĞcomposerÌáÊ¾
+è¿è¡Œcomposeræç¤º
 ```
-´íÎó
-/usr/bin/env: php: Ã»ÓĞÄÇ¸öÎÄ¼ş»òÄ¿Â¼
-½â¾ö
-ln -s /opt/appnode/appnode-php73/root/usr/bin/php /usr/local/bin/php  //rootÔËĞĞÌí¼ÓÈíÁ¬½Ó
+é”™è¯¯
+/usr/bin/env: php: æ²¡æœ‰é‚£ä¸ªæ–‡ä»¶æˆ–ç›®å½•
+è§£å†³
+ln -s /opt/appnode/appnode-php73/root/usr/bin/php /usr/local/bin/php  //rootè¿è¡Œæ·»åŠ è½¯è¿æ¥
 
-ÆäÖĞ /opt/appnode/appnode-php73/root/usr/bin/phpÇë²Î¿¼¶ÔÓ¦°æ±¾°²×°Â·¾¶£¡
-
+å…¶ä¸­ /opt/appnode/appnode-php73/root/usr/bin/phpè¯·å‚è€ƒå¯¹åº”ç‰ˆæœ¬å®‰è£…è·¯å¾„ï¼
 ```
-
-Ö´ĞĞcomposer°²×°
+æ‰§è¡Œcomposerå®‰è£…
 ```
-su - sroot  //ÇĞ»»µ½srootÓÃ»§
-cd /data/.../www  //½øÈëÕ¾µãÔËĞĞÄ¿Â¼
-sh install.sh   //Ö´ĞĞ°²×°ÃüÁî
-»ò
-./install.sh  //Ö´ĞĞ°²×°ÃüÁî
-
+su - sroot  //åˆ‡æ¢åˆ°srootç”¨æˆ·
+cd /data/.../www  //è¿›å…¥ç«™ç‚¹è¿è¡Œç›®å½•
+sh install.sh   //æ‰§è¡Œå®‰è£…å‘½ä»¤
+æˆ–
+./install.sh  //æ‰§è¡Œå®‰è£…å‘½ä»¤
 ```
-
-ÏÂÔØÒ»¼ü°²×°ÃüÁî
+ä¸‹è½½ä¸€é”®å®‰è£…å‘½ä»¤
 ```
-flarum+ÖĞÎÄ¼ò·±ÓïÑÔ°ü
+flarum+ä¸­æ–‡ç®€ç¹è¯­è¨€åŒ…
 wget https://raw.githubusercontent.com/book-boy/Flarum-install/master/install.sh
 
-flarum²å¼ş°ü
+flarumæ’ä»¶åŒ…
 wget https://raw.githubusercontent.com/book-boy/Flarum-install/master/Extensions.sh
 
-flarumÖĞÎÄÓÅ»¯
+flarumä¸­æ–‡ä¼˜åŒ–
 wget https://raw.githubusercontent.com/book-boy/Flarum-install/master/optimization.sh
-
 ```
 
-
-¹æ»®¹æ»®
-
-
-### °å¿éÎäÁÖ´ó»â
+## è§„åˆ’è§„åˆ’
+----
+### æ¿å—æ­¦æ—å¤§çƒ©
 ```
-Ãû³Æ£ºÎäÁÖ´ó»â
-Ä¿Â¼£ºWulin_stew 
-¼ò½é£ºËµÊé³ªÏ·È°ÈË·½£¬ÈıÌõ´óµÀ×ßÖĞÑë¡£
+åç§°ï¼šæ­¦æ—å¤§çƒ©
+ç›®å½•ï¼šWulin_stew 
+ç®€ä»‹ï¼šè¯´ä¹¦å”±æˆåŠäººæ–¹ï¼Œä¸‰æ¡å¤§é“èµ°ä¸­å¤®ã€‚
 ```
-- ×Ó°å¿é
+- å­æ¿å—
 ```
-Ãû³Æ£º´óÔÓ»â 
-Ä¿Â¼£ºHodgepodge
-¼ò½é£º
+åç§°ï¼šå¤§æ‚çƒ© 
+ç›®å½•ï¼šHodgepodge
+ç®€ä»‹ï¼š
 ```
-### °å¿éFlarum
+### æ¿å—Flarum
 ```
-Ãû³Æ£ºFlarum
-Ä¿Â¼£ºflarum
-¼ò½é£ºFlarum
+åç§°ï¼šFlarum
+ç›®å½•ï¼šflarum
+ç®€ä»‹ï¼šFlarum
 ```
-- ×Ó°å¿é
+- å­æ¿å—
 ```
-Ãû³Æ£ºFAQ
-Ä¿Â¼£ºfqa
-¼ò½é£º
+åç§°ï¼šFAQ
+ç›®å½•ï¼šfqa
+ç®€ä»‹ï¼š
 ```
 ```
-Ãû³Æ£ºUpdate
-Ä¿Â¼£ºupdate
-¼ò½é£º±¾Õ¾³ÌÊ½ĞŞ¸´¸üĞÂÄÚÈİÏ¸½Ú
+åç§°ï¼šUpdate
+ç›®å½•ï¼šupdate
+ç®€ä»‹ï¼šæœ¬ç«™ç¨‹å¼ä¿®å¤æ›´æ–°å†…å®¹ç»†èŠ‚
 ```
-composer »ù´¡ÃüÁî
-
-
-ÒÀÀµ°²×°
+## composer åŸºç¡€å‘½ä»¤
+----
+ä¾èµ–å®‰è£…
 ```
-
 composer require xxx/xxx
-
 ```
-¸üĞÂ
+æ›´æ–°
 ```
-
 composer update xxx/xxx
-
-
 ```
-ÒÆ³ı
+ç§»é™¤
 ```
-
 composer remove xxx/xxx
-
 ```
-Ç¨ÒÆ¼°»º´æÇåÀí
+è¿ç§»åŠç¼“å­˜æ¸…ç†
 ```
-
 php flarum migrate
 php flarum cache:clear
+```
+## ä¿®å¤ï¼šä¸»é¢˜å…³æ³¨ã€å›å¤ã€æåŠï¼ˆ@ï¼‰å‘é€é‚®ä»¶ä¸­æ–‡å†…å®¹
+---
+- å…³æ³¨é‚®ä»¶æé†’
+é‚®ä»¶æ ‡é¢˜
+ä¿®æ”¹ vendor/flarum/subscriptions/src/Notification/NewPostBlueprint.phpä¸­71è¡Œè‹±æ–‡å†…å®¹ä¸ºï¼š
+```
+      return "æ‚¨å…³æ³¨çš„ä¸»é¢˜ã€Š{$this->post->discussion->title}ã€‹æœ‰äº†æ–°è¯„è®º";
+```
+é‚®ä»¶å†…å®¹
+ä¿®æ”¹ vendor/flarum/subscriptions/views/emails/newPost.blade.phpä¸­è‹±æ–‡å†…å®¹ä¸ºï¼š
+```
+å˜¿ {!! $user->display_name !!}!
 
-```
-
-ĞŞ¸´£ºÖ÷Ìâ¹Ø×¢¡¢»Ø¸´¡¢Ìá¼°£¨@£©·¢ËÍÓÊ¼şÖĞÎÄÄÚÈİ
-
-¹Ø×¢ÓÊ¼şÌáĞÑ
-
-ÓÊ¼ş±êÌâ
-```
-ĞŞ¸Ä vendor/flarum/subscriptions/src/Notification/NewPostBlueprint.phpÖĞ71ĞĞÓ¢ÎÄÄÚÈİÎª£º
-```
-```
-      return "Äú¹Ø×¢µÄÖ÷Ìâ¡¶{$this->post->discussion->title}¡·ÓĞÁËĞÂÆÀÂÛ";
-```
-ÓÊ¼şÄÚÈİ
-```
-ĞŞ¸Ä vendor/flarum/subscriptions/views/emails/newPost.blade.phpÖĞÓ¢ÎÄÄÚÈİÎª£º
-```
-```
-ºÙ {!! $user->display_name !!}!
-
-         {!! $blueprint->post->user->display_name !!} ÔÚÄú¹Ø×¢µÄÖ÷Ìâ¡¶{!! $blueprint->post->discussion->title !!}¡·ÖĞ·¢±íÁËĞÂÆÀÂÛ¡£
+         {!! $blueprint->post->user->display_name !!} åœ¨æ‚¨å…³æ³¨çš„ä¸»é¢˜ã€Š{!! $blueprint->post->discussion->title !!}ã€‹ä¸­å‘è¡¨äº†æ–°è¯„è®ºã€‚
          -----------------------------------------------
 
            {!! strip_tags($blueprint->post->contentHtml) !!}
 
          {!! app()->url() !!}/d/{!! $blueprint->post->discussion_id !!}/{!! $blueprint->post->number !!}
          -----------------------------------------------
-           Ã»ÓĞĞÂµÄÆÀÂÛÇ°£¬²»»áÔÙÊÕµ½ÓĞ¹Ø´ËÌÖÂÛµÄÈÎºÎÍ¨Öª¡£
-                       ÏµÍ³ÓÊ¼şÇëÎğ»Ø¸´£¡
+           æ²¡æœ‰æ–°çš„è¯„è®ºå‰ï¼Œä¸ä¼šå†æ”¶åˆ°æœ‰å…³æ­¤è®¨è®ºçš„ä»»ä½•é€šçŸ¥ã€‚
+                       ç³»ç»Ÿé‚®ä»¶è¯·å‹¿å›å¤ï¼
 ```
-»Ø¸´ÓÊ¼şÌáĞÑ
-ÓÊ¼ş±êÌâ
+- å›å¤é‚®ä»¶æé†’
+é‚®ä»¶æ ‡é¢˜
+ä¿®æ”¹ vendor/flarum/mentions/src/Notification/PostMentionedBlueprint.phpä¸­77è¡Œè‹±æ–‡å†…å®¹ä¸ºï¼š
 ```
+   return "{$this->reply->user->username} åœ¨ä¸»é¢˜ã€Š{$this->post->discussion->title}ã€‹ä¸­å›å¤äº†æ‚¨";
+```
+é‚®ä»¶å†…å®¹
+ä¿®æ”¹ vendor/flarum/mentions/views/emails/postMentioned.blade.phpä¸­è‹±æ–‡å†…å®¹ä¸ºï¼š
+```
+å˜¿ {!! $user->username !!}!
 
-ĞŞ¸Ä vendor/flarum/mentions/src/Notification/PostMentionedBlueprint.phpÖĞ77ĞĞÓ¢ÎÄÄÚÈİÎª£º
-```
-```
-   return "{$this->reply->user->username} ÔÚÖ÷Ìâ¡¶{$this->post->discussion->title}¡·ÖĞ»Ø¸´ÁËÄú";
-```
-ÓÊ¼şÄÚÈİ
-```
-ĞŞ¸Ä vendor/flarum/mentions/views/emails/postMentioned.blade.phpÖĞÓ¢ÎÄÄÚÈİÎª£º
-```
-```
-ºÙ {!! $user->username !!}!
-
-         {!! $blueprint->reply->user->username !!} »Ø¸´ÁËÄúÔÚÖ÷Ìâ¡¶{!! $blueprint->post->discussion->title !!}¡·ÖĞ·¢±íÓÚ(#{!! $blueprint->post->number !!})Â¥µÄÆÀÂÛ¡£
+         {!! $blueprint->reply->user->username !!} å›å¤äº†æ‚¨åœ¨ä¸»é¢˜ã€Š{!! $blueprint->post->discussion->title !!}ã€‹ä¸­å‘è¡¨äº(#{!! $blueprint->post->number !!})æ¥¼çš„è¯„è®ºã€‚
          -----------------------------------------------
 
              {!! strip_tags($blueprint->reply->contentHtml) !!}
 
          {!! app()->url() !!}/d/{!! $blueprint->reply->discussion_id !!}/{!! $blueprint->reply->number !!}
          -----------------------------------------------
-                       ÏµÍ³ÓÊ¼şÇëÎğ»Ø¸´£¡
+                       ç³»ç»Ÿé‚®ä»¶è¯·å‹¿å›å¤ï¼
 ```
+- æåŠé‚®ä»¶æé†’
+é‚®ä»¶æ ‡é¢˜
+ä¿®æ”¹ vendor/flarum/mentions/src/Notification/UserMentionedBlueprint.phpä¸­69è¡Œè‹±æ–‡å†…å®¹ä¸ºï¼š
+```
+     return "{$this->post->user->username} åœ¨ä¸»é¢˜ã€Š{$this->post->discussion->title}ã€‹ä¸­æåŠäº†æ‚¨";
+```
+é‚®ä»¶å†…å®¹
+ä¿®æ”¹ vendor/flarum/mentions/views/emails/userMentioned.blade.phpä¸­è‹±æ–‡å†…å®¹ä¸ºï¼š
+```
+å˜¿ {!! $user->username !!}!
 
-Ìá¼°ÓÊ¼şÌáĞÑ
-ÓÊ¼ş±êÌâ
-```
-ĞŞ¸Ä vendor/flarum/mentions/src/Notification/UserMentionedBlueprint.phpÖĞ69ĞĞÓ¢ÎÄÄÚÈİÎª£º
-```
-```
-     return "{$this->post->user->username} ÔÚÖ÷Ìâ¡¶{$this->post->discussion->title}¡·ÖĞÌá¼°ÁËÄú";
-```
-ÓÊ¼şÄÚÈİ
-```
-ĞŞ¸Ä vendor/flarum/mentions/views/emails/userMentioned.blade.phpÖĞÓ¢ÎÄÄÚÈİÎª£º
-```
-```
-ºÙ {!! $user->username !!}!
-
-         {!! $blueprint->post->user->username !!} ÔÚÎÄÕÂ¡¶{!! $blueprint->post->discussion->title !!}¡·ÖĞÌá¼°ÁËÄú¡£
+         {!! $blueprint->post->user->username !!} åœ¨æ–‡ç« ã€Š{!! $blueprint->post->discussion->title !!}ã€‹ä¸­æåŠäº†æ‚¨ã€‚
          -----------------------------------------------
 
          {!! strip_tags($blueprint->post->contentHtml) !!}
 
          {!! app()->url() !!}/d/{!! $blueprint->post->discussion_id !!}/{!! $blueprint->post->number !!}
          -----------------------------------------------
-                       ÏµÍ³ÓÊ¼şÇëÎğ»Ø¸´£¡                     
+                       ç³»ç»Ÿé‚®ä»¶è¯·å‹¿å›å¤ï¼                     
 ```
-
-
-ÎÊÌâ£º·¢ËÍÓÊ¼şÖ§³Öhtml£¨²å¼ş£©
-
-
-ÖĞÎÄ²å¼ş£ºcsineneo/lang-simplified-chinese
-```
-    ĞŞ¸Ävendor/csineneo/lang-simplified-chinese/locale/ÖĞactivate_account¼¤»îÕÊ»§¡¢ confirm_emailÑéÖ¤ÓÊÏä¡¢ reset_passwordÖØÉèÃÜÂëÏÂsubjectÓÊ¼şÖ÷Ìâ¡¢bodyÓÊ¼şÄÚÈİ
-```
-bodyÏÂ¼ÓÈëhtmlÓÊÏäÄ£°å
+### é—®é¢˜ï¼šå‘é€é‚®ä»¶æ”¯æŒhtmlï¼ˆæ’ä»¶ï¼‰
+---
+ä¸­æ–‡æ’ä»¶ï¼šcsineneo/lang-simplified-chinese
+    ä¿®æ”¹vendor/csineneo/lang-simplified-chinese/locale/ä¸­activate_accountæ¿€æ´»å¸æˆ·ã€ confirm_emailéªŒè¯é‚®ç®±ã€ reset_passwordé‡è®¾å¯†ç ä¸‹subjecté‚®ä»¶ä¸»é¢˜ã€bodyé‚®ä»¶å†…å®¹
+bodyä¸‹åŠ å…¥htmlé‚®ç®±æ¨¡æ¿
 ```
 activate_account:
-      subject: ¼¤»îÕÊ»§
+      subject: æ¿€æ´»å¸æˆ·
       body: |
-        <b>ÄãºÃ£¬{username}£¡
+        <b>ä½ å¥½ï¼Œ{username}ï¼
 
-        ÄãÔÚ {forum} ½øĞĞÁË×¢²á£¬ÈôÈ·¶¨ÊÇÄã±¾ÈË×¢²áµÄ£¬Çëµã»÷ÏÂÃæµÄÁ´½Ó¼¤»îÄãµÄÕÊ»§£º
+        ä½ åœ¨ {forum} è¿›è¡Œäº†æ³¨å†Œï¼Œè‹¥ç¡®å®šæ˜¯ä½ æœ¬äººæ³¨å†Œçš„ï¼Œè¯·ç‚¹å‡»ä¸‹é¢çš„é“¾æ¥æ¿€æ´»ä½ çš„å¸æˆ·ï¼š
 
         {url}
 
-        Èô·ÇÄã±¾ÈË×¢²á£¬ÇëºöÂÔ´ËÓÊ¼ş¡£</b>
+        è‹¥éä½ æœ¬äººæ³¨å†Œï¼Œè¯·å¿½ç•¥æ­¤é‚®ä»¶ã€‚</b>
 
 
     confirm_email:
-      subject: ÑéÖ¤ÓÊÏä
+      subject: éªŒè¯é‚®ç®±
       body: |
-        <b>ÄãºÃ£¬{username}!
+        <b>ä½ å¥½ï¼Œ{username}!
 
-        ÄãÔÚ {forum} µÄÓÊÏä±»¸ü¸ÄÎª´ËÓÊÏä£¬ÈôÈ·¶¨ÊÇÄã±¾ÈË½øĞĞµÄ¸ü¸Ä£¬Çëµã»÷ÏÂÃæµÄÁ´½ÓÍê³ÉÓÊÏäÑéÖ¤£º
+        ä½ åœ¨ {forum} çš„é‚®ç®±è¢«æ›´æ”¹ä¸ºæ­¤é‚®ç®±ï¼Œè‹¥ç¡®å®šæ˜¯ä½ æœ¬äººè¿›è¡Œçš„æ›´æ”¹ï¼Œè¯·ç‚¹å‡»ä¸‹é¢çš„é“¾æ¥å®Œæˆé‚®ç®±éªŒè¯ï¼š
 
         {url}
 
-        Èô·ÇÄã±¾ÈËĞĞÎª£¬ÇëºöÂÔ´ËÓÊ¼ş¡£</b>
+        è‹¥éä½ æœ¬äººè¡Œä¸ºï¼Œè¯·å¿½ç•¥æ­¤é‚®ä»¶ã€‚</b>
 
     reset_password:
       subject: => core.ref.reset_your_password
       body: |
-        <b>ÄãºÃ£¬{username}£¡
+        <b>ä½ å¥½ï¼Œ{username}ï¼
 
-        ÄãÔÚ {forum} ÇëÇóÖØÉèÃÜÂë£¬ÈôÈ·¶¨ÊÇÄã±¾ÈË½øĞĞµÄ¸ü¸Ä£¬Çëµã»÷ÏÂÃæµÄÁ´½ÓÖØÉèÃÜÂë£º
+        ä½ åœ¨ {forum} è¯·æ±‚é‡è®¾å¯†ç ï¼Œè‹¥ç¡®å®šæ˜¯ä½ æœ¬äººè¿›è¡Œçš„æ›´æ”¹ï¼Œè¯·ç‚¹å‡»ä¸‹é¢çš„é“¾æ¥é‡è®¾å¯†ç ï¼š
 
         {url}
 
-        Èô·ÇÄã±¾ÈËĞĞÎª£¬ÇëºöÂÔ´ËÓÊ¼ş¡£</b>
-        ```
-ĞŞ¸Ävendor/flarum/core/src/Api/Controller/SendConfirmationEmailController.phpÖĞ90ĞĞÒÔÏÂ´úÂë£º
+        è‹¥éä½ æœ¬äººè¡Œä¸ºï¼Œè¯·å¿½ç•¥æ­¤é‚®ä»¶ã€‚</b>
+```
+ä¿®æ”¹vendor/flarum/core/src/Api/Controller/SendConfirmationEmailController.phpä¸­90è¡Œä»¥ä¸‹ä»£ç ï¼š
 ```
 $this->mailer->raw($body, function (Message $message) use ($actor, $data) {
             $message->to($actor->email);
             $message->subject('['.$data['{forum}'].'] '.$this->translator->trans('core.email.activate_account.subject'));
         });
-  ```
-  ¸ÄÎª
-  ```
+```
+  æ”¹ä¸º
+```
   $this->mailer->send(['html' => $body], [], function (Message $message) use ($actor, $data) {
             $message->to($actor->email);
             $message->subject('['.$data['{forum}'].'] '.$this->translator->trans('core.email.activate_account.subject'));
-  ```
-ĞŞ¸Ävendor/illuminate/mail/Mailer.phpÖĞ213ĞĞÒÔÏÂ´úÂë£º
+```
+ä¿®æ”¹vendor/illuminate/mail/Mailer.phpä¸­213è¡Œä»¥ä¸‹ä»£ç ï¼š
 ```
  $data['message'] = $message = $this->createMessage();
 
@@ -257,62 +215,73 @@ $this->mailer->raw($body, function (Message $message) use ($actor, $data) {
         // to creating view based emails that are able to receive arrays of data.
         $this->addContent($message, $view, $plain, $raw, $data);
 ```
-Îª
+ä¸º
 ```
  $message = $this->createMessage();
         $this->addContent($message, $view, $plain, $raw, $data);
         $data['message'] = $message;
 ```
-298ĞĞÒÔÏÂ´úÂë£º
+298è¡Œä»¥ä¸‹ä»£ç ï¼š
 ```
 $message->setBody($this->renderView($view, $data), 'text/html');
 ```
-Îª
+ä¸º
 ```
  if ($data) {
                 $message->setBody($this->getView($view, $data), 'text/html');
             } else {
                 $message->setBody($view, 'text/html');
             }
-  ```
-  ²Î¿¼£ºhttp://discuss.flarum.org.cn/d/862
-
-
-
-ĞŞ¸´£ºÊ×Ò³¶¯Ì¬¹«¸æÄÚÈİ(²å¼ş)
-
-²å¼ş zerosonesfun/flarum-ext-fickle-announcement
 ```
-ĞŞ¸Äassets/extensions/zerosonesfun-fickle-announcement/fickle.jsÖĞ7ĞĞÓ¢ÎÄÄÚÈİÎª
+  å‚è€ƒï¼šhttp://discuss.flarum.org.cn/d/862
+### ä¿®å¤ï¼šé¦–é¡µåŠ¨æ€å…¬å‘Šå†…å®¹(æ’ä»¶)
+---
+æ’ä»¶ zerosonesfun/flarum-ext-fickle-announcement
+ä¿®æ”¹assets/extensions/zerosonesfun-fickle-announcement/fickle.jsä¸­7è¡Œè‹±æ–‡å†…å®¹ä¸º
 ```
+newEl.innerHTML = '<p class="fickle">è¿™æ˜¯ä¸€ä¸ªå…¨é€‰çš„è°ˆè®ºç«™ç‚¹ï¼</p>';
 ```
-newEl.innerHTML = '<p class="fickle">ÕâÊÇÒ»¸öÈ«Ñ¡µÄÌ¸ÂÛÕ¾µã£¡</p>';
-
-```
-
-ĞŞ¸´£ºÔö¼ÓÖ§³Ö¶¥²¿µ¼º½À¸
-
-Ôö¼Ó¶¥²¿µ¼º½
-ĞŞ¸Ävendor/flarum/core/views/frontend/forum.blade.phpÖĞ21ĞĞ
+### ä¿®å¤ï¼šå¢åŠ æ”¯æŒé¡¶éƒ¨å¯¼èˆªæ 
+---
+å¢åŠ é¡¶éƒ¨å¯¼èˆª
+ä¿®æ”¹vendor/flarum/core/views/frontend/forum.blade.phpä¸­21è¡Œ
 ```
                <div id="header-primary" class="Header-primary"></div>
 
 ```
-Îª
+ä¸º
 ```
                 <div class="Header-primary">
                     <ul class="Header-controls">
-                     <li><a href="http://flarum.org.cn" class="Button Button--link" target="_blank">Ê×Ò³</a></li>
-                     <li><a href="http://flarum.org.cn/docs/" class="Button Button--link" target="_blank">ÎÄµµ</a></li>
-                     <li><a href="https://github.com/justjavac/flarum/releases" class="Button Button--link" target="_blank">ÏÂÔØ</a></li>
+                     <li><a href="http://flarum.org.cn" class="Button Button--link" target="_blank">é¦–é¡µ</a></li>
+                     <li><a href="http://flarum.org.cn/docs/" class="Button Button--link" target="_blank">æ–‡æ¡£</a></li>
+                     <li><a href="https://github.com/justjavac/flarum/releases" class="Button Button--link" target="_blank">ä¸‹è½½</a></li>
                     </ul>
                     <div id="header-primary"><ul class="Header-controls"></ul></div>
               </div>
-      ```
-²Î¿´£ºhttp://discuss.flarum.org.cn/d/114/6
+```
 
-¸üĞÂ¼ÇÂ¼
+å‚çœ‹ï¼šhttp://discuss.flarum.org.cn/d/114
 
-1.ĞŞ¸´£ºÖ÷Ìâ¹Ø×¢¡¢»Ø¸´¡¢Ìá¼°£¨@£©·¢ËÍÓÊ¼şÖĞÎÄÄÚÈİ https://discuss.srinn.cn/d/7
-2.ĞŞ¸´£ºÊ×Ò³¶¯Ì¬¹«¸æÄÚÈİ(²å¼ş) https://discuss.srinn.cn/d/9
-2.ĞŞ¸´:Ôö¼ÓÖ§³Ö¶¥²¿µ¼º½À¸ https://discuss.srinn.cn/d/11
+### æ›´æ–°è®°å½•
+---
+ 1. ä¿®å¤ï¼šä¸»é¢˜å…³æ³¨ã€å›å¤ã€æåŠï¼ˆ@ï¼‰å‘é€é‚®ä»¶ä¸­æ–‡å†…å®¹ https://discuss.srinn.cn/d/7
+ 2. ä¿®å¤ï¼šé¦–é¡µåŠ¨æ€å…¬å‘Šå†…å®¹(æ’ä»¶) https://discuss.srinn.cn/d/9
+ 3. ä¿®å¤ï¼šå¢åŠ æ”¯æŒé¡¶éƒ¨å¯¼èˆªæ  https://discuss.srinn.cn/d/11
+ 
+ ---
+ 
+- [ ] 
+- [x] 
+
+![book.boy](https://avatars0.githubusercontent.com/u/47053228?s=96&v=4){:height="50" width="50"}
+> * æ•´ç†çŸ¥è¯†ï¼Œå­¦ä¹ ç¬”è®°
+> è¯·ä¿ç•™æ­¤ä»½è¯´æ˜ï¼Œå¦‚éœ€æ’°å†™æ–°ç¨¿ä»¶ï¼Œç‚¹å‡»é¡¶éƒ¨å·¥å…·æ å³ä¾§çš„ <i class="icon-file"></i> **æ–°æ–‡ç¨¿** æˆ–è€…ä½¿ç”¨å¿«æ·é”® `Ctrl+Alt+N`ã€‚
+
+
+| é¡¹ç›®        | ä»·æ ¼   |  æ•°é‡  |
+| --------   | -----:  | :----:  |
+| è®¡ç®—æœº     | \$1600 |   5     |
+| æ‰‹æœº        |   \$12   |   12   |
+| ç®¡çº¿        |    \$1    |  234  |
+
