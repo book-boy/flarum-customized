@@ -22,23 +22,23 @@
 <meta name="application-name" content="SRINN GAME TEAM">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="msapplication-TileColor" content="{{ array_get($forum, 'attributes.themePrimaryColor') }}">
-<meta name="msapplication-TileImage" content="https://discuss.srinn.cn/assets/icons/icon.png">
+<meta name="msapplication-TileImage" content="https://forum.srinn.cn/assets/icons/icon.png">
 <meta property="og:site_name" content="SRINN GAME TEAM" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:image" content="https://discuss.srinn.cn/assets/icons/icon.png" />
-<meta property="og:image" content="https://discuss.srinn.cn/assets/icons/icon.png" />
-<meta property="og:url" content="https://discuss.srinn.cn/" />
-<meta name="twitter:url" content="https://discuss.srinn.cn/" />
+<meta name="twitter:image" content="https://forum.srinn.cn/assets/icons/icon.png" />
+<meta property="og:image" content="https://forum.srinn.cn/assets/icons/icon.png" />
+<meta property="og:url" content="https://forum.srinn.cn/" />
+<meta name="twitter:url" content="https://forum.srinn.cn/" />
 <meta property="og:title" content="{{ $title }}" />
 <meta name="twitter:title" content="{{ $title }}" />
 <meta property="og:description" content="江湖游侠,四海为家。云集客栈,论剑天下。" />
 <meta name="twitter:description" content="江湖游侠,四海为家。云集客栈,论剑天下。" />
-<link rel="icon" type="image/png" href="https://discuss.srinn.cn/assets/icons/icon.png">
-<link rel="shortcut icon" type="image/x-icon" href="https://discuss.srinn.cn/assets/icons/favicon.ico">
-<link rel="mask-icon" href="https://discuss.srinn.cn/assets/icons/icon.svg" color="%%PRIMARY_COLOR%%">
+<link rel="icon" type="image/png" href="https://forum.srinn.cn/assets/icons/icon.png">
+<link rel="shortcut icon" type="image/x-icon" href="https://forum.srinn.cn/assets/icons/favicon.ico">
+<link rel="mask-icon" href="https://forum.srinn.cn/assets/icons/icon.svg" color="%%PRIMARY_COLOR%%">
 {!! $head !!}
-<link rel="stylesheet" href="https://discuss.srinn.cn/assets/css/flarum.ext.css">
-<script type="text/javascript" src="https://discuss.srinn.cn/assets/js/webpjs-0.0.2.min.js"></script>
+<link rel="stylesheet" href="https://forum.srinn.cn/assets/css/flarum.ext.css">
+<script type="text/javascript" src="https://forum.srinn.cn/assets/js/webpjs-0.0.2.min.js"></script>
 <!--<script type="text/javascript">
   var _paq = _paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
