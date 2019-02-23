@@ -9,7 +9,6 @@ echo "              \/                \/     \/  \/     \/     \/      "
 echo "-------------------------------------------------------------------"
 echo "Flarum社区安装，请在非root用户下执行"
 GITHUB_ROOT="https://raw.githubusercontent.com/book-boy/flarum-customized/master/"
-chmod -R 777 flarum
 echo "开始安装扩展插件"
 cd flarum
 echo "自动识别扩展"
