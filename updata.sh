@@ -79,6 +79,7 @@ echo "开始删除无用插件"
 composer remove flarum/auth-github
 echo "安装完成请到后台插件中启用"
 echo "开始优化支持代码"
+mkdir -p assets/{js,css} && chmod 777 assets
 echo "允许注册中文名"
 sed -i "s#a-z0-9_-#-_a-z0-9\\\x7f-\\\xff#" \
   vendor/flarum/core/src/User/UserValidator.php
