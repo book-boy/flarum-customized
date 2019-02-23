@@ -1,5 +1,83 @@
+#! /bin/bash
+echo "-------------------------------------------------------------------"
+echo "                        .__         Flarum扩展插件+中文优化定制  "
+echo "          ______________|__| ____   ____       ____   ____       "
+echo "         /  ___/\_  __  \  |/    \ /    \    _/ ___\ /    \      "
+echo "         \___  \  |  | \/  |   |  \   |  \   \  \___|   |  \     "
+echo "         /____  > |__|  |__|___|  /___|  / /\ \___  >___|  /     "
+echo "              \/                \/     \/  \/     \/     \/      "
+echo "-------------------------------------------------------------------"
+echo "Flarum社区安装，请在非root用户下执行"
 GITHUB_ROOT="https://raw.githubusercontent.com/book-boy/flarum-customized/master/"
-cd ../ && chmod -R 777 flarum && cd flarum
+chmod 777 flarum && cd flarum
+echo "开始安装扩展插件"
+echo "自动识别扩展"
+composer require c78/flarum-ext-mediaembed-https
+echo "个人资料视图"
+composer require michaelbelgium/flarum-profile-views
+echo "主题摘录"
+composer require jordanjay29/flarum-ext-summaries
+echo "自动加载更多"
+composer require noriods/auto-more
+echo "论坛公告"
+composer require zerosonesfun/flarum-ext-fickle-announcement
+echo "光影主题"
+composer require madchatthew/flarum-ext-themelightshadow
+echo "最佳答案"
+composer require wiwatsrt/flarum-ext-best-answer
+echo "表情包"
+composer require clarkwinkelmann/flarum-ext-emojionearea
+echo "货币积分"
+composer require antoinefr/flarum-ext-money
+echo "等级排名"
+composer require reflar/level-ranks
+echo "夜间模式切换"
+composer require reflar/nightmode
+echo "热度排名"
+composer require reflar/gamification
+echo "清理帖子"
+composer require reflar/clean-profile-posts
+echo "注册邀请码"
+composer require reflar/doorman
+echo "更改图像https"
+composer require fof/secure-https
+echo "自定义TextFormatter"
+composer require fof/formatting
+echo "封禁用户"
+composer require fof/spamblock
+echo "头像上传剪切"
+composer require fof/profile-image-crop
+echo "自定义html页面"
+composer require fof/pages
+echo "社交个人资料"
+composer require fof/socialprofile
+echo "自定义页脚"
+composer require fof/custom-footer
+echo "默认分组"
+composer require fof/default-group
+echo "[reply]回复可见[/reply]"
+composer require kvothe/reply-to-see
+echo "表格"
+composer require kvothe/pipetables
+echo "用户条款"
+composer require flagrow/terms
+echo "私密帖子"
+composer require flagrow/byobu
+echo "分割帖子"
+composer require flagrow/split
+echo "网站地图"
+composer require flagrow/sitemap
+echo "广告位"
+composer require flagrow/ads
+echo "插件扩展市场"
+composer require flagrow/bazaar
+echo "图片上传扩展"
+composer require flagrow/upload
+echo "vivaldi定制插件"
+composer require csineneo/vivaldi-club-bbcode
+echo "开始删除无用插件"
+composer remove flarum/auth-github
+echo "安装完成请到后台插件中启用"
 echo "开始优化支持代码"
 echo "允许注册中文名"
 sed -i "s#a-z0-9_-#-_a-z0-9\\\x7f-\\\xff#" \
