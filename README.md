@@ -1,4 +1,4 @@
-## 本副本源自[Csineneo/flarum-hack](https://github.com/Csineneo/flarum-hack)版本衍生
+﻿## 本副本源自[Csineneo/flarum-hack](https://github.com/Csineneo/flarum-hack)版本衍生
 
 ### 适用Flarum版本
 
@@ -8,6 +8,12 @@
 
 - 请查看Csineneo版本内容
 
+### 一键安装命令
+```
+wget https://raw.githubusercontent.com/book-boy/flarum-customized/master/updata.sh && chmod 777 updata.sh && sh updata.sh
+
+```
+
 ### 定制演示站点
 
-- [https://discuss.srinn.cn](https://discuss.srinn.cn)
+- [https://forum.srinn.cn](https://forum.srinn.cn)

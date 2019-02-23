@@ -9,7 +9,7 @@ echo "              \/                \/     \/  \/     \/     \/      "
 echo "-------------------------------------------------------------------"
 echo "Flarum社区安装，请在非root用户下执行"
 GITHUB_ROOT="https://raw.githubusercontent.com/book-boy/flarum-customized/master/"
-chmod 777 flarum && cd flarum
+chmod  -R 777 flarum && cd flarum
 echo "开始安装扩展插件"
 echo "自动识别扩展"
 composer require c78/flarum-ext-mediaembed-https
@@ -79,7 +79,7 @@ echo "开始删除无用插件"
 composer remove flarum/auth-github
 echo "安装完成请到后台插件中启用"
 echo "开始优化支持代码"
-mkdir -p assets/{js,css} && chmod 777 assets
+mkdir -p assets/{js,css} && chmod  -R 777 assets
 echo "允许注册中文名"
 sed -i "s#a-z0-9_-#-_a-z0-9\\\x7f-\\\xff#" \
   vendor/flarum/core/src/User/UserValidator.php
