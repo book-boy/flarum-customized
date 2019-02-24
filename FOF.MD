@@ -1,0 +1,16 @@
+composer require fof/user-bio
+composer require fof/sentry
+composer require fof/bbcode-details
+composer require fof/default-user-preferences
+composer require fof/socialprofile
+composer require fof/prevent-necrobumping
+composer require fof/custom-footer
+composer require fof/transliterator
+composer require fof/default-group
+composer require fof/recaptcha
+composer require fof/secure-https
+composer require fof/profile-image-crop
+composer require fof/spamblock
+composer require fof/links
+composer require fof/formatting
+composer require fof/pages
