@@ -75,6 +75,8 @@ echo "图片上传扩展"
 composer require flagrow/upload
 echo "vivaldi定制插件"
 composer require csineneo/vivaldi-club-bbcode
+echo "默认开启邮件通知"
+composer require sinamics/flarum-default-preferences
 echo "开始删除无用插件"
 composer remove flarum/auth-github
 echo "安装完成请到后台插件中启用"
