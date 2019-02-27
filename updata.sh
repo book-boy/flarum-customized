@@ -55,6 +55,8 @@ echo "自定义页脚"
 composer require fof/custom-footer
 echo "默认分组"
 composer require fof/default-group
+echo "默认开启邮件通知"
+composer require fof/default-user-preferences
 echo "[reply]回复可见[/reply]"
 composer require kvothe/reply-to-see
 echo "表格"
@@ -75,8 +77,6 @@ echo "图片上传扩展"
 composer require flagrow/upload
 echo "vivaldi定制插件"
 composer require csineneo/vivaldi-club-bbcode
-echo "默认开启邮件通知"
-composer require sinamics/flarum-default-preferences
 echo "开始删除无用插件"
 composer remove flarum/auth-github
 echo "安装完成请到后台插件中启用"
