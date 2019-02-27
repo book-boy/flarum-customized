@@ -11,10 +11,6 @@ echo "Flarum社区安装，请在非root用户下执行"
 GITHUB_ROOT="https://raw.githubusercontent.com/book-boy/flarum-customized/master/"
 echo "开始安装扩展插件"
 cd flarum
-echo "自动识别扩展"
-composer require c78/flarum-ext-mediaembed-https
-echo "个人资料视图"
-composer require michaelbelgium/flarum-profile-views
 echo "主题摘录"
 composer require jordanjay29/flarum-ext-summaries
 echo "自动加载更多"
@@ -75,10 +71,8 @@ echo "插件扩展市场"
 composer require flagrow/bazaar
 echo "图片上传扩展"
 composer require flagrow/upload
-echo "vivaldi定制插件"
-composer require csineneo/vivaldi-club-bbcode
 echo "开始删除无用插件"
-composer remove flarum/auth-github
+composer remove csineneo/vivaldi-club-bbcode
 echo "安装完成请到后台插件中启用"
 echo "开始优化支持代码"
 mkdir -p assets/{js,css} && chmod -R 777 assets
