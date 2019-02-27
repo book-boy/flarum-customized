@@ -93,16 +93,6 @@ sed -i 's#65535#2147483647#' \
 echo "不限制管理员灌水"
 sed -i -r "s#(isFlooding = )#\1\$actor->id == '1' ? false : #" \
   vendor/flarum/core/src/Post/Floodgate.php
-echo "支持vivaldi://scheme"
-sed -i "/Autoemail/i\\\t\\t\$configurator->urlConfig->allowScheme('vivaldi');" \
-  vendor/s9e/text-formatter/src/Configurator/Bundles/Fatdown.php
-sed -i "/new SchemeList/a\\\t\\t\$this->allowedSchemes[] = 'vivaldi';" \
-  vendor/s9e/text-formatter/src/Configurator.php
-sed -i 's#ftp|https#ftp|vivaldi|https#g' \
-  vendor/s9e/text-formatter/src/Bundles/Fatdown.php
-echo "透过VivaldiPO文享专属banner"
-sed -i -r "s#(t.stopPropagation\(\)}}\)\))#\1,/Vivaldi/.test(t.data.attributes.userAgent)?m('img',{className:'viv-icon',src:'assets/images/viv-badge.png'}):''#" \
-	vendor/flarum/core/js/dist/forum.js
 echo "URL美化，移除slug"
 sed -i -r 's#(discussion->id).*$#\1#' \
   vendor/flarum/core/views/frontend/content/index.blade.php
