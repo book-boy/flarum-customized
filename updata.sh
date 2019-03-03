@@ -27,7 +27,7 @@ echo "货币积分"
 composer require antoinefr/flarum-ext-money
 echo "等级排名"
 composer require reflar/level-ranks
-echo "夜间模式切换"
+echo "夜间模式"
 composer require reflar/nightmode
 echo "热度排名"
 composer require reflar/gamification
@@ -43,7 +43,7 @@ echo "封禁用户"
 composer require fof/spamblock
 echo "头像上传剪切"
 composer require fof/profile-image-crop
-echo "自定义html页面"
+echo "自定义页面"
 composer require fof/pages
 echo "社交个人资料"
 composer require fof/socialprofile
@@ -73,8 +73,6 @@ echo "图片上传扩展"
 composer require flagrow/upload
 echo "注册按钮"
 composer require kvothe/signup-button
-echo "开始删除无用插件"
-composer remove csineneo/vivaldi-club-bbcode
 echo "安装完成请到后台插件中启用"
 echo "开始优化支持代码"
 mkdir -p assets/{js,css} && chmod -R 777 assets
@@ -160,11 +158,6 @@ sed -i 's#-{\$slug}##' \
 	vendor/flagrow/split/src/Posts/DiscussionSplitPost.php
 sed -i 's#-{\$event->discussion->slug}##' \
 	vendor/flagrow/split/src/Listeners/UpdateSplitTitleAfterDiscussionWasRenamed.php  
-echo "阻止fof/secure-https代理HTTPS內容，并清理原始码"
-sed -i -e '/proxyUrl.urlencode/d; /proxyUrl/a\\t\t\t\treturn substr(\$attrValue, 0, 5 ) === "http:" ? \$proxyUrl . urlencode(\$attrValue) : \$attrValue;' \
-	vendor/fof/secure-https/src/Listeners/ModifyContentHtml.php
-sed -i "/Nginx/, /http/d; s#\$imgurl, -3#strrchr(\$imgurl, '.'), 1#" \
-	vendor/fof/secure-https/src/Api/Controllers/GetImageUrlController.php
 echo "定义表情"	
 sed -i "s#title: \"Diversity\"#title: \"种族\"#; \
     s#title: \"Recent\"#title: \"最近\"#; \
