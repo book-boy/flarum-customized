@@ -71,6 +71,8 @@ echo "插件扩展市场"
 composer require flagrow/bazaar
 echo "图片上传扩展"
 composer require flagrow/upload
+echo "注册按钮"
+composer require kvothe/signup-button
 echo "开始删除无用插件"
 composer remove csineneo/vivaldi-club-bbcode
 echo "安装完成请到后台插件中启用"
