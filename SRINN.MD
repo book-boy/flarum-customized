@@ -1,4 +1,4 @@
-## Flarum安装前准备
+﻿## Flarum安装前准备
 ----
 安装环境面板
 ```
@@ -284,4 +284,36 @@ newEl.innerHTML = '<p class="fickle">这是一个全选的谈论站点！</p>';
 | 计算机     | \$1600 |   5     |
 | 手机        |   \$12   |   12   |
 | 管线        |    \$1    |  234  |
+
+
+#### 插件
+|插件名|安装包|版本|
+|-|-|-|
+|Flarum|flarum/flarum-beta|v0.1.0-beta.8.1|
+|中文简体|csineneo/lang-simplified-chinese||
+|中文繁体|csineneo/lang-traditional-chinese||
+|最佳答案|wiwatsrt/flarum-ext-best-answer||
+|货币积分|antoinefr/flarum-ext-money||
+|等级排名|reflar/level-ranks||
+|夜间模式|reflar/nightmode||
+|热度排名|reflar/gamification||
+|清理帖子|reflar/clean-profile-posts||
+|邀请码|reflar/doorman||
+|更改图像|fof/secure-https||
+|封禁用户|fof/spamblock||
+|头像剪切|fof/profile-image-crop||
+|自定义页面|fof/pages||
+|自定义页脚|fof/custom-footer||
+|默认分组|fof/default-group||
+|默认通知|fof/default-user-preferences||
+|回复可见|kvothe/reply-to-see||
+|表格|kvothe/pipetables||
+|用户条款|flagrow/terms||
+|私密帖子|flagrow/byobu||
+|分割帖子|flagrow/split||
+|网站地图|flagrow/sitemap||
+|广告位置|flagrow/ads||
+|扩展市场|flagrow/bazaar||
+|上传扩展|flagrow/upload||
+|注册按钮|kvothe/signup-button||
 
