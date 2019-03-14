@@ -73,6 +73,14 @@ echo "图片上传扩展"
 composer require flagrow/upload
 echo "注册按钮"
 composer require kvothe/signup-button
+composer require migratetoflarum/canonical
+composer require kvothe/keyboard-shortcuts
+composer require fof/frontpage
+composer require fof/user-bio
+composer require reflar/inject-mithril-components
+composer require kvothe/spoiler-bbcode
+composer require flagrow/linguist
+composer require kvothe/online-users
 echo "安装完成请到后台插件中启用"
 echo "开始优化支持代码"
 mkdir -p assets/{js,css} && chmod -R 777 assets
